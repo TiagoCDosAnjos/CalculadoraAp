@@ -8,9 +8,6 @@ namespace ProjetoCalculadora
 {
     internal class Calculadora
     {
-        public int Numero1 { private get; set; }
-        public int Numero2 { private get; set; }
-
         public double Soma(double numero1, double numero2)
         {
             return numero1 + numero2;

@@ -8,15 +8,18 @@ do
 {
     try
     {
-        Console.Clear();
-        Console.WriteLine("Deseja fazer Qual operação? \n \n" +
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("Deseja fazer Qual operação? \n \n" +
 
-            "Digite [1] para soma \n" +
-            "Digite [2] para subtrair \n" +
-            "Digite [3] para multiplicar \n" +
-            "Digite [4] para Dividir \n");
+                "Digite [1] para soma \n" +
+                "Digite [2] para subtrair \n" +
+                "Digite [3] para multiplicar \n" +
+                "Digite [4] para Dividir \n");
 
-        operacao = Console.ReadLine();
+           operacao = Console.ReadLine();
+        } while (int.Parse(operacao) > 4);
 
         Console.Write("Digite o primeiro numero: ");
 
@@ -52,17 +55,7 @@ do
                 // código
                 break;
         }
-        //if (operacao == '1')
-        //    resultado = calc.Soma(num1, num2);
-        //else if (operacao == '2')
-        //    resultado = calc.Subtrair(num1, num2);
-        //else if (operacao == '3')
-        //    resultado = calc.Multiplicar(num1, num2);
-        //else if (operacao == '4')
-        //    resultado = calc.Dividir(num1, num2);
-        //else
-        //    resultado = 0;
-
+       
         Console.WriteLine("O resultado da operação é: " + resultado);
         Console.WriteLine();
     }
